@@ -9,10 +9,10 @@ public class channel extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        createNotifcationChannel();
+        createNotificationChannel();
     }
 
-    private void createNotifcationChannel() {
+    private void createNotificationChannel() {
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
             NotificationChannel channel=new NotificationChannel("1",
                     "MyChannel",
